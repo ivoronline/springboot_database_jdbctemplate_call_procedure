@@ -16,7 +16,7 @@ public class MyController {
   //=========================================================================================================
   // CALL PROCEDURE
   //=========================================================================================================
-  // http://localhost:8080/callProcedure?name=Jill&age=50
+  // http://localhost:8080/callProcedure?name=John&age=50
   @ResponseBody
   @GetMapping("/callProcedure")
   public Integer callProcedure(@RequestParam String name, @RequestParam Integer age) {

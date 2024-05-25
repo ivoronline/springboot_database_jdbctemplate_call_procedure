@@ -16,7 +16,7 @@ public class MyService {
   public Integer callProcedure(String name, Integer age) {
     return jdbcTemplate.update(
       " CALL TEST.MY_PROCEDURE(?, ?)"
-      , name, age                     //new Object[] { name, age }
+      , name, age             //new Object[] { name, age }
     );
   }
 
